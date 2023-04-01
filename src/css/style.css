@@ -98,6 +98,11 @@ main {
   padding: 1em;
   border: 2px solid var(--clr-primary);
   border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.faq-wrapper.expanded {
+  background-color: var(--clr-accent);
 }
 
 .question-wrapper {
@@ -123,8 +128,7 @@ main {
   display: none;
 }
 
-.faq__answer.expanded {
+.faq-wrapper.expanded .faq__answer {
   display: block;
   margin-block-start: 1em;
-  color: var(--clr-neutral-gray-700);
 }
